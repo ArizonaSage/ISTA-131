@@ -8,7 +8,7 @@ def main():
     #https://stackoverflow.com/questions/20105364/how-can-i-make-a-scatter-plot-colored-by-density-in-matplotlib
     #  https://stackoverflow.com/questions/6148207/linear-regression-with-matplotlib-numpy
     # https://www.tutorialspoint.com/how-can-i-plot-a-single-point-in-matplotlib-python
-    
+
     df = pd.read_csv('pokemon.csv', skiprows=1, names=['Name2', 'Primary Type', 'Attack','Defense', 'Total'], 
     usecols=[1, 2, 4,5,10], encoding='latin-1')
     make_scatterplot(df)
@@ -192,8 +192,8 @@ def make_scatterplot(df):
     plt.plot(mean_attack, mean_defense, marker="o", markersize=12, markeredgecolor = "red", markerfacecolor="red")
 
     # Add lines to the mean to make it stand out
-    plt.hlines(y=74.66, xmin=0, xmax = 80.46, color='grey', linestyle='--', linewidth = 2)
-    plt.vlines(x=80.46, ymin=0, ymax = 74.66, color='grey', linestyle='--', linewidth = 2)
+    plt.hlines(y=74.66, xmin=0, xmax = 200, color='grey', linestyle='--', linewidth = 2)
+    plt.vlines(x=80.46, ymin=0, ymax = 225, color='grey', linestyle='--', linewidth = 2)
 
 
 
